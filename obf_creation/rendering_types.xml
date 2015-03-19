@@ -582,6 +582,7 @@
 		<type tag="icn_network" value="icn" minzoom="11" relation="true"/>
 		<entity_convert pattern="tag_transform" from_tag="network" from_value="icn" to_tag1="network" to_value1="icn" to_tag2="icn_network" to_value2="icn"/>
 		<type tag="lcn_network" value="lcn" minzoom="11" relation="true"/>
+		
 		<entity_convert pattern="tag_transform" from_tag="network" from_value="lcn" to_tag1="network" to_value1="lcn" to_tag2="lcn_network" to_value2="lcn"/>
 		<type tag="ncn_network" value="ncn" minzoom="11" relation="true"/>
 		<entity_convert pattern="tag_transform" from_tag="network" from_value="ncn" to_tag1="network" to_value1="ncn" to_tag2="ncn_network" to_value2="ncn"/>
@@ -590,6 +591,7 @@
 
 		<type tag="network" value="icn" minzoom="11" additional="true" relation="true"/>
 		<type tag="network" value="lcn" minzoom="11" additional="true" relation="true"/>
+		<type tag="lcn" value="yes" minzoom="11" additional="true"/>
 		<type tag="network" value="ncn" minzoom="11" additional="true" relation="true"/>
 		<type tag="network" value="rcn" minzoom="11" additional="true" relation="true"/>
 		<entity_convert pattern="tag_transform" from_tag="ref" if_tag1="network" if_value1="icn" to_tag1="icn_ref" apply_to="relation"/>
@@ -2387,6 +2389,7 @@
 		<routing_type tag="cycleway:right" value="opposite_track" tag2="cycleway" value2="opposite_track" mode="replace"/>
 
 		<routing_type tag="network" value="lcn" mode="register" base="true" relation="true"/>
+		<routing_type tag="lcn" value="yes" mode="amend"/>
 		<routing_type tag="network" value="rcn" mode="register" base="true" relation="true"/>
 		<routing_type tag="network" value="ncn" mode="register" base="true" relation="true"/>
 		<routing_type tag="network" value="icn" mode="register" base="true" relation="true"/>
